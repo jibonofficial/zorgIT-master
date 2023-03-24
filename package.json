@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:digitalocean": "npm install --production=true && npm run build && npm ci"
   },
   "dependencies": {
     "pnpm": "^6.26.0",
