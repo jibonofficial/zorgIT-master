@@ -2,7 +2,7 @@
   "name": "zorgit",
   "private": "true",
   "version": "0.0.0",
-   "engines": {
+  "engines": {
     "node": "18.x"
   },
   "scripts": {
