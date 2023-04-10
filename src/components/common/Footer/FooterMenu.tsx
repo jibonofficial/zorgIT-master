@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 interface Props {
   title: string;
   to: string;
+  menuTitle?: string;
 }
 
 export const footerMenu = [
@@ -11,19 +12,19 @@ export const footerMenu = [
     subMenu: [
       {
         title: 'Web & Apps Design',
-        to: '',
+        to: '/development',
       },
       {
         title: 'Web & Apps Development',
-        to: '',
+        to: '/development',
       },
       {
         title: 'Digital marketing',
-        to: '',
+        to: '/digital-marketing',
       },
       {
         title: 'Graphics Design',
-        to: '',
+        to: '/design',
       },
       {
         title: 'Search Engine Optimization',
@@ -32,10 +33,10 @@ export const footerMenu = [
     ],
   },
   {
-    menuTitle: 'Use Cases',
+    menuTitle: 'Clients',
     subMenu: [
       {
-        title: 'The Best One',
+        title: 'Qtdealz',
         to: '',
       },
       {
@@ -69,11 +70,11 @@ export const footerMenu = [
       },
       {
         title: 'Hosting',
-        to: '',
+        to: 'https://m.do.co/c/0810016f07e7',
       },
       {
         title: 'Support',
-        to: '',
+        to: 'https://wa.me/message/VUQHDAMVQEK5A1',
       },
     ],
   },
@@ -82,7 +83,7 @@ export const footerMenu = [
     subMenu: [
       {
         title: 'About Us',
-        to: '',
+        to: '/about-us',
       },
       {
         title: 'Careers',
@@ -94,11 +95,11 @@ export const footerMenu = [
       },
       {
         title: 'Teams',
-        to: '',
+        to: '/about-us',
       },
       {
         title: 'Contact Us',
-        to: '',
+        to: '/contact-us',
       },
     ],
   },
@@ -107,30 +108,30 @@ export const footerMenu = [
 export const bottomMenu = [
   {
     title: 'Privacy Policy',
-    to: '',
+    to: '/privacy-policy',
   },
   {
     title: 'Terms of Use',
-    to: '',
-  },
-  {
-    title: 'Sales and Refunds',
-    to: '',
-  },
-  {
-    title: 'Legal',
-    to: '',
+    to: '/terms-and-conditions',
   },
   {
     title: 'Site Map',
-    to: '',
+    to: 'https://goo.gl/maps/kBit2pAZiMLj2CWY6',
   },
 ];
 
-export default function FooterLink({ title, to }: Props) {
+export default function FooterLink({ title, to, menuTitle }: Props) {
+  if (to.startsWith('http') || to.startsWith("https")) return (
+    <a href={to} target={"_blank"}>
+      <span>{title}</span>
+    </a>
+  )
+  if (to.length === 0) return (
+    <p>{title}</p>
+  )
   return (
     <Link to={to}>
       <span>{title}</span>
     </Link>
-  );
+  )
 }

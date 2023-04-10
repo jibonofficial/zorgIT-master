@@ -50,10 +50,10 @@ export default function Projects() {
   };
 
   return (
-    <section className="my-16">
+    <section className="md:my-16">
       <Title title="Our Work Portfolio" />
       <h5 className="px-10 text-center">
-        Lorem Ipsum has been the industry's standard dummy text.
+        Some Selected works from our clients. We have worked with many clients and have delivered
       </h5>
       <div className="mx-8 mt-10 xl:ml-32 2xl:ml-80 custom-slider">
         <Slider {...ProjectsSliderSettings}>

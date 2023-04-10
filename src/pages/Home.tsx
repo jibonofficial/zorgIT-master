@@ -17,7 +17,7 @@ export default function Home() {
       <Services />
       <Projects />
       <AboutUs />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Stacks />
     </GlobalLayout>
   );

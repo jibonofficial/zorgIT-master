@@ -4,6 +4,7 @@ import chilisLogo from '@images/chilisLogo.png';
 import dealizleLogo from '@images/dealizleLogo.png';
 import fastDealLogo from '@images/fastDealsLogo.png';
 import jillLogo from '@images/jillLogo.png';
+import QtdealzLogo from '@images/qtdealz.png';
 
 const clients = [
   {
@@ -36,6 +37,11 @@ const clients = [
     image: jillLogo,
     url: 'https://www.chilis.com/',
   },
+  {
+    _id: 7,
+    image: QtdealzLogo,
+    url: 'https://www.qtdealz.com/',
+  }
 ];
 
 export default clients;

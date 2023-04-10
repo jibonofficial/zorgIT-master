@@ -6,12 +6,14 @@ import Development from '@/pages/Development';
 import Login from '@/pages/Login';
 import Marketing from '@/pages/Marketing';
 import Portfolio from '@/pages/Portfolio';
+import PrivacyPolicy from '@/pages/PrivacyPolicy';
 import { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import About from '../pages/About';
 import { Contact } from '../pages/Contact';
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
+import TermsCondition from '@/pages/TermsCondition';
 
 export default function AppRoutes() {
   const { pathname, hash, key } = useLocation();
@@ -37,12 +39,14 @@ export default function AppRoutes() {
       <Route path="/contact-us" element={<Contact />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/services" element={<Services />} />
-      <Route path="/clients" element={<Testimonials />} />
+      {/* <Route path="/clients" element={<Testimonials />} /> */}
       <Route path="/design" element={<Design />} />
       <Route path="/development" element={<Development />} />
       <Route path="/digital-marketing" element={<Marketing />} />
       <Route path="/login" element={<Login />} />
       <Route path="/career" element={<Career />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-and-conditions" element={<TermsCondition />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

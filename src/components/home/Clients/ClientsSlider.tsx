@@ -31,7 +31,7 @@ export default function ClientsSlider() {
   return (
     <SectionLayout classNames="hidden sm:block mt-6">
       <Title title="our trusted clients" />
-      <h5 className="mb-10 text-center">Trusted by more than 50 companies all over the world.</h5>
+      <h5 id='clients' className="mb-10 text-center">Trusted by more than 50 companies all over the world.</h5>
       <Slider {...clientsSliderSettings}>
         {clients.map((client) => (
           <a key={client._id} href={client.url} target="_blank" rel="noreferrer">

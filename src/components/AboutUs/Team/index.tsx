@@ -27,7 +27,7 @@ const Team = () => {
               />
             </div>
             <div className="absolute bottom-0 -translate-x-1/2 left-1/2">
-              <h5 className="mt-4 text-2xl font-medium text-sub-title whitespace-nowrap">
+              <h5 className="mt-4 text-2xl font-medium text-sub-title whitespace-nowrap text-center">
                 {data.name}
               </h5>
               <p className="my-4 text-sm font-normal text-center text-paragraph">{data.position}</p>

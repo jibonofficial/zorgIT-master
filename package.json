@@ -12,10 +12,13 @@
     "build:digitalocean": "npm install --production=true && npm run build && npm ci"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@react-hook/window-size": "^3.1.1",
     "pnpm": "^6.26.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-hook-form": "^7.23.0",
+    "react-hook-form": "^7.24.0",
+    "react-hot-toast": "^2.4.0",
     "react-icons": "^4.3.1",
     "react-router-dom": "6",
     "react-slick": "^0.28.1",

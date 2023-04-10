@@ -8,7 +8,7 @@ export const CONTACT_CARD_DATA: CardTypes[] = [
     id: 1,
     title: 'Office',
     icon: HiOutlineLocationMarker,
-    desc: 'Kader valley, House no 11, Road 01, Block H, Chittagong, Bangladesh. 4216',
+    desc: 'Moar Banani 11, Ventura Iconia, Level 3, Holding 37, Road 11, Block H, Banani 1213 Dhaka, Bangladesh.',
     href: '#map',
   },
   {
@@ -22,7 +22,7 @@ export const CONTACT_CARD_DATA: CardTypes[] = [
     id: 3,
     title: 'Email Information',
     icon: FiMail,
-    desc: 'start@zorgitgroup.com',
-    href: 'mailto:start@zorgitgroup.com',
+    desc: 'mail@zorgitgroup.com',
+    href: 'mailto:mail@zorgitgroup.com',
   },
 ];
